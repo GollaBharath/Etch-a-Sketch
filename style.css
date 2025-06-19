@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
+
+html {
+  min-height: 100vh;
+  overflow: scroll;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wdxl-lubrifont-jp-n-regular {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixel {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.pixely {
+  min-width: 1vw;
+  min-height: 1vw;
+  padding: 1vh;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.pixely:hover.pixely{
+  background-color: rgb(from red 12 20 50);
+}
+
+#row {
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
