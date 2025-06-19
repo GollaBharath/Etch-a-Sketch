@@ -11,12 +11,32 @@ function smt(size){
             pixel.appendChild(pixely)
         }
     }
+    const items = document.querySelectorAll(".pixely")
+    items.forEach((item)=>{item.addEventListener("mouseover",(event)=>{
+        event.target.classList.add('traced')
+    })})
 }
+
 const inp = document.getElementById("size")
-    inp.addEventListener("change",(event)=>{
-        size = event.target.value
-        const temp = document.getElementById("row")
-        temp.innerHTML = ``
-        smt(size)
-    })
-smt(0)
+inp.addEventListener("change",(event)=>{
+    size = event.target.value
+    if (size>100){
+        alert("Max pixels allowed is 100.")
+        size=16
+    }
+    const temp = document.getElementById("row")
+    temp.innerHTML = ``
+    smt(size)
+})
+smt(16)
+
+// function rainbow(){
+//     let colorR = Math.floor(Math.random() *255)
+//     let colorG = Math.floor(Math.random() *255)
+//     let colorB = Math.floor(Math.random() *255)
+//     const col = document.querySelectorAll(".pixely")
+//     col.forEach((colo)=>{
+//         colo.
+//     })
+// }
+// rainbow()
