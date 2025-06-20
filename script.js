@@ -14,6 +14,7 @@ function smt(size){
     const items = document.querySelectorAll(".pixely")
     items.forEach((item)=>{item.addEventListener("mouseover",(event)=>{
         event.target.classList.add('traced')
+        rainbow()
     })})
 }
 
@@ -30,13 +31,16 @@ inp.addEventListener("change",(event)=>{
 })
 smt(16)
 
-// function rainbow(){
-//     let colorR = Math.floor(Math.random() *255)
-//     let colorG = Math.floor(Math.random() *255)
-//     let colorB = Math.floor(Math.random() *255)
-//     const col = document.querySelectorAll(".pixely")
-//     col.forEach((colo)=>{
-//         colo.
-//     })
-// }
-// rainbow()
+function rainbow(){
+    const col = document.querySelectorAll(".traced")
+    col.forEach((colo)=>{
+        let colorR = Math.floor(Math.random() *255)
+        let colorG = Math.floor(Math.random() *255)
+        let colorB = Math.floor(Math.random() *255)
+        colo.style.backgroundColor = `rgb(${colorR},${colorG},${colorB})`
+    })
+}
+
+function settings(){
+    
+}
