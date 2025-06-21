@@ -50,6 +50,9 @@ h1 {
   justify-content: center;
 }
 
-.traced {
-  background-color: black;
+dialog {
+  background-color: bisque;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 2vh;
 }
