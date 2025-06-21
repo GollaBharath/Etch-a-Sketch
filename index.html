@@ -10,11 +10,18 @@
 <body>
     <h1 class="wdxl-lubrifont-jp-n-regular">Etch-A-Sketch</h1>
     <dialog id="settingsbox">
-        <h3 style="text-align: center; display: flex; justify-content: space-evenly;"><em>Settings</em><button id="closebtn">X</button> </h3>
-        <label for="size">Enter Grid Size
-        <input id="size" type="number" autofocus></label><br>
-        <button id="reset">Reset</button><br>
-        <button id="colorinv">Change Pen Color</button>
+        <div class="heading">
+            <h2>Settings</h2>
+            <button id="closebtn">X</button> 
+        </div>
+
+        <label for="size">Enter Grid Size : 
+        <input id="size" type="number"></label>
+
+        <div class="btns">
+            <button id="colorinv">Change Pen Color</button>
+            <button id="reset">Reset</button>
+        </div>
     </dialog>
     
     <button class="btn" onclick="settings()">Change Settings</button>

@@ -56,3 +56,45 @@ dialog {
   font-weight: bold;
   border-radius: 2vh;
 }
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#closebtn {
+  max-height: fit-content;
+  border-radius: 1rem;
+  justify-self: center;
+  align-self: center;
+  background-color:antiquewhite;
+}
+
+#closebtn:hover {
+  background-color: red;
+}
+
+.btns {
+  padding: 2vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  background-color: antiquewhite;
+  border-radius: 1vh;
+  padding: 1vh;
+  font-weight: 300;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+#size {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
